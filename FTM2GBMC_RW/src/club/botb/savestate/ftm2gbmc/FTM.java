@@ -17,12 +17,49 @@
 
 package club.botb.savestate.ftm2gbmc;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 /**
  *
  * @author Joseph El-Khouri
  */
 public class FTM {
 
+    private static final String VERSION = "# FamiTracker text export 0.4.2";
     
+    // Song information
+    private String title;
+    private String author;
+    private String copyright;
+    
+    // Song comments
+    private ArrayList<String> comments;
+    
+    // Global settings
+    private int machine;
+    private int framerate;
+    private int expansion;
+    private int vibrato;
+    private int split;
+    
+    // Namco N163 global settings
+    private int n163channels;
+    
+    // Macros
+    private HashMap<Integer, FTMMacro> volumeMacros;
+    private HashMap<Integer, FTMMacro> pitchMacros;
+    private HashMap<Integer, FTMMacro> dutyMacros;
+    private HashMap<Integer, FTMMacro> arpeggioMacros;
+    
+    // DPCM samples
+    private HashMap<Integer, FTMDPCMSample> dpcmSamples;
+    
+    // Instruments
+    private HashMap<Integer, FTMN163Instrument> waveInstruments;
+    private HashMap<Integer, FTM2A03Instrument> standardInstruments;
+    
+    // Tracks
+    private ArrayList<FTMTrack> tracks;
     
 }
