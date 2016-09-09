@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2016 Savestate
+ * Copyright (C) 2016 Joseph El-Khouri
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 /**
  *
  * @author Joseph El-Khouri
- */ 
+ */
 public class Main {
 
     /**
